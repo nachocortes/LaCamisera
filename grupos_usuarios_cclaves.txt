@@ -13,6 +13,11 @@ TecGestionProductos
 TecGestionVentas
 
 
+cuenta email
+
+cuenta django email: nachoDamDjango@gmail.com
+contraseña: damdjango150
+
 
 usuarios 
 
