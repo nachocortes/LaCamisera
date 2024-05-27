@@ -27,12 +27,6 @@ urlpatterns = [
     path('login/', include('core.LOGIN.urls')),
     path('', include('core.STORE.urls')),
     path('ventas/', include('core.VENTAS.urls')),
-
-
-    # path('rrhh/', include('VENTAS.urls')),
-    # path('crm/', include('VENTAS.urls')),
-
-
     path('index/', views.index, name='index'),
     path('api/', include(RRHHUrls)),
     path('auth/', include('djoser.urls')),

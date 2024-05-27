@@ -38,6 +38,9 @@
                         <a href="{% url 'perfil_usuario' %}" class="">{{ user.username|capfirst }}</a>
                         <a href="{% url 'logout' %}" class="in">Cerrar sesion</a>
                         <a href="{% url 'cart:cart' %}" class=" ml-3"><i class="fa fa-shopping-cart"></i></a>
+                        {% if user.is_superuser %}
+                            <a href="{% url 'index' %}" class=" ml-3">Admin</a>
+                        {% endif %}
                     {% else %}
                         <a href="{% url 'login' %}">Iniciar sesion</a>
                         <a href="{% url 'register' %}" class="in">Registrarse</a>
